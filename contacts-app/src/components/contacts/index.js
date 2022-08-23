@@ -13,7 +13,7 @@ function Contacts() {
   return (
     <div>
           <h1>Contacts App</h1>
-          <List></List>
+          <List contacts={contacts}></List>
           <Form addContact={setContacts} contacts={contacts}></Form>
     </div>
 

@@ -6,6 +6,7 @@ function Form({addContact,contacts}) {
      const onChangeInput = (e) => {
           setForm({...form,[e.target.name]:e.target.value})}
 
+     // form is reset,when contact is added
      const clearForm = (e) => {
           e.preventDefault();
           setForm({fullname:'',phone_number:''})
