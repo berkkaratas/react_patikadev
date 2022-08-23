@@ -7,3 +7,5 @@ I am using this repository for my React Patika.dev course.
 * using axios
 * async & Await
 * custom modules
+
+### patika.dev | React | Portfolio
