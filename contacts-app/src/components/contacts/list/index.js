@@ -1,26 +1,48 @@
 import React from 'react'
-import './index.css'
+import { useState } from 'react';
 
 function List({contacts}) {
+  const [filterText, setFilterText] = useState('');
+
+  const filtered = contacts.filter((item)=>{
+    return Object.keys(item).some((key)=>
+      item[key]
+        .toString()
+        .toLowerCase()
+        .includes(filterText.toLocaleLowerCase())
+    );
+  });
 
   if(contacts.length === 0){
     return (
-      <div>
+      <div className='text-center'>
         <p>No contacts yet. Add contact</p>
       </div>
     )
   }
+  if(filtered.length === 0){
+    return(
+      <div className='text-center'>
+        <input placeholder='Filter contact' value={filterText} onChange={(e)=> setFilterText(e.target.value)} ></input>
+        <p>No Result</p>
+      </div>
+    );  
+  }
+
 
 
   return (
     <div >
+      <input placeholder='Filter contact' value={filterText} onChange={(e)=> setFilterText(e.target.value)} ></input>
       <table>
         <thead>
-          <th>Name</th>
-          <th>Number</th>
+         <tr>
+           <th>Name</th>
+           <th>Number</th>
+         </tr>
         </thead>
         <tbody>
-          {contacts.map((contact,index) => {
+          {filtered.map((contact,index) => {
             return (
               <tr key={index}>
                 <td>{contact.fullname}</td>
