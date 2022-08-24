@@ -16,3 +16,5 @@ I am using this repository for my React Patika.dev course.
 * list contacts
 * filtering contacts
 * useState, useEffect, validations, filter, styling
+
+### patika.dev | React | Todo App
