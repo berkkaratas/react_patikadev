@@ -7,9 +7,9 @@ function App() {
   const [todos, setTodos] = React.useState([]);
   return (
     <div className="App">
-        <section class="todoapp">
+        <section className="todoapp">
             <Header todos={todos} addTodo={setTodos} />
-            <Main />      
+            <Main todos={todos} setTodos={setTodos} />      
             <Footer/> 
         </section>
       

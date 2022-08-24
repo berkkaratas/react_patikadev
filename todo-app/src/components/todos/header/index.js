@@ -9,7 +9,7 @@ function Header({todos, addTodo }) {
      }
      const clearForm = (e) => {
           e.preventDefault();
-          setForm({todo:''})
+          setForm({todo:'',completed:false});
      }
      const handleKeyDown = (e) => {
           if (e.key === 'Enter') {
@@ -26,7 +26,7 @@ function Header({todos, addTodo }) {
 
   return (
     <div>
-          <header class="header">
+          <header className="header">
                <h1>todos</h1>
                <form>
                     <input 

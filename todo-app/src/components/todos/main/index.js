@@ -1,37 +1,27 @@
 import React from 'react'
+import TodoList from './list'
 
-export default function Main() {
+export default function Main({todos,setTodos}) {   
+
+     const markAllComplete = () => {
+            setTodos(todos.map(todo => ({ ...todo, completed: true })))
+            console.log(todos);
+     }
+     if(todos.length === 0){
+          return (<div></div>);
+     }
+     
+
   return (
     <div>
-     <section class="main">
-		<input class="toggle-all" type="checkbox" />
-		<label for="toggle-all">
+     <section className="main">
+		<input className="toggle-all" type="checkbox" />
+		<label htmlFor="toggle-all" onClick={markAllComplete}>
 			Mark all as complete
 		</label>
 
-		<ul class="todo-list">
-			<li class="completed">
-				<div class="view">
-					<input class="toggle" type="checkbox" />
-					<label>Learn JavaScript</label>
-					<button class="destroy"></button>
-				</div>
-			</li>
-			<li>
-				<div class="view">
-					<input class="toggle" type="checkbox" />
-					<label>Learn React</label>
-					<button class="destroy"></button>
-				</div>
-			</li>
-			<li>
-				<div class="view">
-					<input class="toggle" type="checkbox" />
-					<label>Have a life!</label>
-					<button class="destroy"></button>
-				</div>
-			</li>
-		</ul>
+          <TodoList todos={todos} setTodos={setTodos}/>
+		
 	</section>
     </div>
   )
