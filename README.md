@@ -31,6 +31,8 @@ I am using this repository for my React Patika.dev course.
 * [Formik](https://formik.org/docs/overview)
 
 ### patika.dev | React | Memoization
+* useMemo()
+* memo for avoid the re-rendering of the component
 
 ### patika.dev | React | Context API
 
