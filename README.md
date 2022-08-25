@@ -18,20 +18,16 @@ I am using this repository for my React Patika.dev course.
 * useState, useEffect, validations, filter, styling
 
 ### patika.dev | React | Todo App
-
 * pending updates
 
 ### patika.dev | React | Fetching
-
 * native fetching data from [{JSON} Placeholder API](https://jsonplaceholder.typicode.com/)
 * replacing fetch with axios
 
 ### patika.dev | React | Routing
-
 * [React Router](https://reactrouter.com/en/main/getting-started/overview)
 
 ### patika.dev | React | Formik
-
 * [Formik](https://formik.org/docs/overview)
 
 ### patika.dev | React | Memoization
