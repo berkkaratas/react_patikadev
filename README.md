@@ -22,3 +22,6 @@ I am using this repository for my React Patika.dev course.
 * pending updates
 
 ### patika.dev | React | Fetching
+
+* native fetching data from [{JSON} Placeholder API](https://jsonplaceholder.typicode.com/)
+* replacing fetch with axios
