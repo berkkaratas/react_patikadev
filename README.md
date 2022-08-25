@@ -25,3 +25,18 @@ I am using this repository for my React Patika.dev course.
 
 * native fetching data from [{JSON} Placeholder API](https://jsonplaceholder.typicode.com/)
 * replacing fetch with axios
+
+### patika.dev | React | Routing
+
+* [React Router](https://reactrouter.com/en/main/getting-started/overview)
+
+### patika.dev | React | Formik
+
+* [Formik](https://formik.org/docs/overview)
+
+### patika.dev | React | Memoization
+
+### patika.dev | React | Context API
+
+
+### patika.dev | React | Redux
