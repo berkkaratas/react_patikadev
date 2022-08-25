@@ -18,3 +18,7 @@ I am using this repository for my React Patika.dev course.
 * useState, useEffect, validations, filter, styling
 
 ### patika.dev | React | Todo App
+
+* pending updates
+
+### patika.dev | React | Fetching
