@@ -1,9 +1,8 @@
 import React, {memo} from 'react'
 
-function Headher() {
-     console.log('Headher component rendered');
+function Headher({data}) {
   return (
-    <div>Headher</div>
+    <div>{JSON.stringify(data)}</div>
   )
 }
 export default memo(Headher);

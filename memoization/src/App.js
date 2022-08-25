@@ -1,12 +1,18 @@
 import './App.css';
-import {useState} from 'react';
+import {useState, useMemo} from 'react';
 import Headher from './components/Headher';
 
 function App() {
   const [count, setCount] = useState(0);
+  const data = useMemo(() => {
+    return{
+      name: 'John Doe',number: count
+    }
+  }, [count]);
+
   return (
     <div className="App">
-      <Headher count={count < 5 ? 0 : count} />
+      <Headher data={data} />
       <hr/> 
       <h1>{count}</h1>
       <button onClick={() => setCount(count + 1)}>click</button>
