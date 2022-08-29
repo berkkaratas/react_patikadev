@@ -37,4 +37,6 @@ I am using this repository for my React Patika.dev course.
 ### patika.dev | React | Context API
 
 
-### patika.dev | React | Redux
+### patika.dev | React | Chat-App
+
+* [Chat-App README.md](/chat-app/readme.md)
