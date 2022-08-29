@@ -40,3 +40,6 @@ I am using this repository for my React Patika.dev course.
 ### patika.dev | React | Chat-App
 
 * [Chat-App README.md](/chat-app/readme.md)
+
+### patika.dev | React | Localization
+* [React Intl](https://formatjs.io/docs/react-intl/)
